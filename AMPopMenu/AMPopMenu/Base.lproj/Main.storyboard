@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,90 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wl-n2-dnf">
+                                <rect key="frame" x="514" y="40" width="50" height="50"/>
+                                <state key="normal" backgroundImage="yellow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hvh-7v-An7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Roo-o9-p9r">
+                                <rect key="frame" x="277" y="285" width="50" height="50"/>
+                                <state key="normal" backgroundImage="blue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SuE-kA-UPK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2g-JB-kU8">
+                                <rect key="frame" x="43" y="550" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTm-UT-ZGx">
+                                <rect key="frame" x="514" y="530" width="50" height="50"/>
+                                <state key="normal" backgroundImage="red">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EnH-1G-fTr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LzR-no-gyK">
+                                <rect key="frame" x="36" y="530" width="50" height="50"/>
+                                <state key="normal" backgroundImage="green">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="r68-Ae-jCS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmA-36-4Pn">
+                                <rect key="frame" x="36" y="40" width="50" height="50"/>
+                                <state key="normal" backgroundImage="orange">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Rwf-sT-jYf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dmA-36-4Pn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="4fz-kj-kAz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Wl-n2-dnf" secondAttribute="trailing" constant="20" id="4hl-Gw-fGR"/>
+                            <constraint firstItem="dmA-36-4Pn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="5bO-VS-Tg0"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="LzR-no-gyK" secondAttribute="bottom" constant="20" id="6WS-Ah-hbE"/>
+                            <constraint firstItem="LzR-no-gyK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="Elo-4F-bVa"/>
+                            <constraint firstAttribute="centerY" secondItem="Roo-o9-p9r" secondAttribute="centerY" id="FhQ-Lo-4D5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oTm-UT-ZGx" secondAttribute="trailing" constant="20" id="e40-HF-Bhk"/>
+                            <constraint firstAttribute="centerX" secondItem="Roo-o9-p9r" secondAttribute="centerX" id="q0R-Z5-Zwl"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="oTm-UT-ZGx" secondAttribute="bottom" constant="20" id="tg5-qF-8ww"/>
+                            <constraint firstItem="1Wl-n2-dnf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="w6Q-xb-7lH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonBottomLeft" destination="LzR-no-gyK" id="ICj-kn-Osq"/>
+                        <outlet property="buttonBottomRight" destination="oTm-UT-ZGx" id="faR-Ow-Kde"/>
+                        <outlet property="buttonCenter" destination="Roo-o9-p9r" id="l9N-04-ecX"/>
+                        <outlet property="buttonTopLeft" destination="dmA-36-4Pn" id="tcS-4S-m77"/>
+                        <outlet property="buttonTopRight" destination="1Wl-n2-dnf" id="gpW-07-AhS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="blue" width="50" height="50"/>
+        <image name="green" width="50" height="50"/>
+        <image name="orange" width="50" height="50"/>
+        <image name="red" width="50" height="50"/>
+        <image name="yellow" width="50" height="50"/>
+    </resources>
 </document>

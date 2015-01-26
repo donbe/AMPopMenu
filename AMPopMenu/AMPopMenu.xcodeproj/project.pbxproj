@@ -14,6 +14,9 @@
 		6659968B1A7652F300E7FDBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6659968A1A7652F300E7FDBD /* Images.xcassets */; };
 		6659968E1A7652F300E7FDBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6659968C1A7652F300E7FDBD /* LaunchScreen.xib */; };
 		6659969A1A7652F300E7FDBD /* AMPopMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 665996991A7652F300E7FDBD /* AMPopMenuTests.m */; };
+		665996A91A7653C700E7FDBD /* AMPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 665996A41A7653C700E7FDBD /* AMPopMenu.m */; };
+		665996AA1A7653C700E7FDBD /* AMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 665996A61A7653C700E7FDBD /* AMTableViewCell.m */; };
+		665996AB1A7653C700E7FDBD /* AMTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 665996A81A7653C700E7FDBD /* AMTouchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		665996931A7652F300E7FDBD /* AMPopMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMPopMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		665996981A7652F300E7FDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		665996991A7652F300E7FDBD /* AMPopMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPopMenuTests.m; sourceTree = "<group>"; };
+		665996A31A7653C700E7FDBD /* AMPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMPopMenu.h; sourceTree = "<group>"; };
+		665996A41A7653C700E7FDBD /* AMPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMPopMenu.m; sourceTree = "<group>"; };
+		665996A51A7653C700E7FDBD /* AMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTableViewCell.h; sourceTree = "<group>"; };
+		665996A61A7653C700E7FDBD /* AMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTableViewCell.m; sourceTree = "<group>"; };
+		665996A71A7653C700E7FDBD /* AMTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTouchView.h; sourceTree = "<group>"; };
+		665996A81A7653C700E7FDBD /* AMTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTouchView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 		6659967C1A7652F300E7FDBD /* AMPopMenu */ = {
 			isa = PBXGroup;
 			children = (
+				665996AC1A7653CD00E7FDBD /* AMPopMenu */,
 				665996811A7652F300E7FDBD /* AppDelegate.h */,
 				665996821A7652F300E7FDBD /* AppDelegate.m */,
 				665996841A7652F300E7FDBD /* ViewController.h */,
@@ -117,6 +127,19 @@
 				665996981A7652F300E7FDBD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		665996AC1A7653CD00E7FDBD /* AMPopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				665996A31A7653C700E7FDBD /* AMPopMenu.h */,
+				665996A41A7653C700E7FDBD /* AMPopMenu.m */,
+				665996A51A7653C700E7FDBD /* AMTableViewCell.h */,
+				665996A61A7653C700E7FDBD /* AMTableViewCell.m */,
+				665996A71A7653C700E7FDBD /* AMTouchView.h */,
+				665996A81A7653C700E7FDBD /* AMTouchView.m */,
+			);
+			name = AMPopMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				665996A91A7653C700E7FDBD /* AMPopMenu.m in Sources */,
 				665996861A7652F300E7FDBD /* ViewController.m in Sources */,
+				665996AB1A7653C700E7FDBD /* AMTouchView.m in Sources */,
 				665996831A7652F300E7FDBD /* AppDelegate.m in Sources */,
+				665996AA1A7653C700E7FDBD /* AMTableViewCell.m in Sources */,
 				665996801A7652F300E7FDBD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
